@@ -1,0 +1,15 @@
+dias = int(input("Digite o número de dias do aluguel: "))
+km_rodados = int(input("Digite o número de quilômetros rodados: "))
+
+
+custo_diario = dias * 90
+
+
+if km_rodados > 100:
+    custo_extra = (km_rodados - 100) * 12
+else:
+    custo_extra = 0
+
+
+valor_total = custo_diario + custo_extra
+print(f"Valor total a ser pago: R${valor_total:.2f}")
